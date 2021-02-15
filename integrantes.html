@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="" href="">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <form id="signForm">
+            <label>Nombre:</label>
+            <input type="text" name="name"><br><br>
+
+            <label>Apellido:</label>
+            <input type="text" name="apelido"><br><br>
+
+            <label>Usuario:</label>
+            <input type="text" name="Usuario"><br><br>
+
+            <label>Fecha Nacimiento:</label>
+            <input type="date" name="email"><br><br>
+
+            <label>E-mail:</label>
+            <input type="email" name="user"><br><br>
+
+            <label>Telefono:</label>
+            <input type="text" name="email"><br><br>
+
+            <label>Contraseña</label>
+            <input type="password" id="password" onchange="validatePass()"><br><br>
+
+            <label>Confirmar contraseña</label>
+            <input type="password" id="Cpassword" onchange="validatePass()"><br><br>
+        </form>
+    </body>
+</html>
+
+<script>
+function validatePass(){
+    const contraseña = $("#password").val();
+
+    if (contraseña !== undefined && $("#Cpassword")!==undefined)
+    {
+        if (contraseña !== $("#Cpassword"))
+        {
+            alert("Contraseñas diferentes");
+        }
+    }
+}
+</script>
