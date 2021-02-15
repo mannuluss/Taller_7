@@ -36,3 +36,15 @@ function country(){
         }
     });
 }
+
+function validatePass(){
+    const contraseña = $("#password").val();
+
+    if (contraseña !== undefined && $("#Cpassword")!==undefined)
+    {
+        if (contraseña !== $("#Cpassword"))
+        {
+            alert("Contraseñas diferentes");
+        }
+    }
+}
